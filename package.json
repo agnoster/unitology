@@ -1,6 +1,8 @@
 { "name": "unitology"
 , "version": "0.0.1"
 , "description": "Easy conversions between units"
+, "homepage": "https://github.com/agnoster/unitology"
+, "keywords": ["convert", "conversion", "units", "time", "interval", "duration"]
 , "main": "index.js"
 , "scripts":
   { "test": "./node_modules/.bin/mocha -R spec"
