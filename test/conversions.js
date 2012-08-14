@@ -22,6 +22,39 @@ describe("Conversions", function() {
             })
         })
     })
+
+    describe("weight", function() {
+
+        tests =
+          [ "3 kg in oz = 105.82197216882132"
+          , "5 pounds in grams = 2267.96"
+          ]
+
+        tests.forEach(function(test) {
+            it(test, function() {
+
+                var match = test.match(/^(.*) in (.*) = (.*)$/)
+                should.exist(match)
+                unit.weight(match[1]).to(match[2]).toString().should.eql(match[3])
+            })
+        })
+    })
+    describe("distance", function() {
+
+        tests =
+          [ "1 mile in m = 1609.344"
+          , "1 inch in m = 0.0254"
+          ]
+
+        tests.forEach(function(test) {
+            it(test, function() {
+
+                var match = test.match(/^(.*) in (.*) = (.*)$/)
+                should.exist(match)
+                unit.distance(match[1]).to(match[2]).toString().should.eql(match[3])
+            })
+        })
+    })
 })
 
 describe("Parsing and downconverting", function() {
