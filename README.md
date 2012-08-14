@@ -1,5 +1,4 @@
-# Unitology
-[![build status](https://secure.travis-ci.org/agnoster/unitology.png?branch=master)](http://travis-ci.org/agnoster/unitology)
+# Unitology [![build status](https://secure.travis-ci.org/agnoster/unitology.png?branch=master)](http://travis-ci.org/agnoster/unitology)
 
 Sometimes you just want to convert from one unit to another.
 
@@ -22,8 +21,6 @@ Okay, so you can add a new unit to an existing type of measurement. What about t
     unit.volume.cc = '0.001l'
     unit.volume.define({ 'cubic meters': '1000l', 'm3': 'cubic meters' })
 
-## TBD
-
 Though it might be nicer, and more concise, to write this way:
 
     unit.volume = unit.define(
@@ -34,7 +31,9 @@ Though it might be nicer, and more concise, to write this way:
       }
     )
 
-Also: How to convert units like temperature? More complex formula needed.
+## TBD
+
+How to convert units like temperature? More complex formula needed.
 
 Maybe:
     
@@ -42,3 +41,31 @@ Maybe:
     unit.temp['C->K'] = function(c) { return c - 273 }
 
 Or something?
+
+## Contributing
+
+I love forks, pull requests, and issues. Use Github, it's the bee's knees!
+
+## MIT License
+
+Copyright (C) 2012 by Isaac Wolkerstorfer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+

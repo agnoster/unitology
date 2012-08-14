@@ -11,4 +11,5 @@
   { "mocha": "latest"
   , "should": "latest"
   }
+, "license": "MIT"
 }
