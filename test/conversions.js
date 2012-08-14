@@ -10,6 +10,7 @@ describe("Conversions", function() {
           , "28 days in weeks = 4"
           , "3 days in hours = 72"
           , "10 years in seconds = 315360000"
+          , "5m in ms = 300000"
           ]
 
         tests.forEach(function(test) {
