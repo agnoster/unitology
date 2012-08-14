@@ -1,4 +1,5 @@
 # Unitology
+[![build status](https://secure.travis-ci.org/agnoster/unitology.png?branch=master)](http://travis-ci.org/agnoster/unitology)
 
 Sometimes you just want to convert from one unit to another.
 
