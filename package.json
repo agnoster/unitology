@@ -3,9 +3,10 @@
 , "description": "Easy conversions between units"
 , "main": "index.js"
 , "scripts":
-  { "test": "node test"
+  { "test": "./node_modules/.bin/mocha -R spec"
   }
 , "devDependencies":
-  { "mocha": "*"
+  { "mocha": "latest"
+  , "should": "latest"
   }
 }
