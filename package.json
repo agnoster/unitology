@@ -1,0 +1,11 @@
+{ "name": "unitology"
+, "version": "0.0.1"
+, "description": "Easy conversions between units"
+, "main": "index.js"
+, "scripts":
+  { "test": "node test"
+  }
+, "devDependencies":
+  { "mocha": "*"
+  }
+}
